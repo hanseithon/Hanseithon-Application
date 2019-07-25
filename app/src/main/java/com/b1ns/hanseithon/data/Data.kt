@@ -1,8 +1,8 @@
 package com.b1ns.hanseithon.data
 
-data class Register(val id: String, val password: String, val name: String, val age: Int)
+data class Register(val id: String, val password: String, val rePassword: String, val name: String)
 
-data class Login(val id: String, val password: String, val token: String?, val user: String?)
+data class Login(val id: String, val password: String, val token: String?)
 
 data class ResultLogin(val success: Boolean, val message: String)
 

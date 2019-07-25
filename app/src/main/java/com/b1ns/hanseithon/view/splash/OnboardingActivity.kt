@@ -10,13 +10,13 @@ import com.b1ns.hanseithon.adapter.SliderAdapter
 import com.b1ns.hanseithon.config.AppPrefs
 import com.b1ns.hanseithon.hide
 import com.b1ns.hanseithon.show
+import com.b1ns.hanseithon.view.user.LoginActivity
 import kotlinx.android.synthetic.main.activity_onboarding.*
+import org.jetbrains.anko.startActivity
 
 class OnboardingActivity : AppCompatActivity(){
 
-
-
-
+    
     private lateinit var sliderAdapter: SliderAdapter
     private var dots: Array<TextView?>? = null
     private lateinit var layouts: Array<Int>
@@ -112,6 +112,7 @@ class OnboardingActivity : AppCompatActivity(){
 
     private fun navigateToLogin() {
         AppPrefs(this).setFirstTimeLaunch(false)
+        startActivity<LoginActivity>()
         finish()
     }
 
