@@ -1,9 +1,10 @@
-package com.b1ns.hanseithon
+package com.b1ns.hanseithon.view
 
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.b1ns.hanseithon.R
 import org.jetbrains.anko.startActivity
 
 class SplashActivity : AppCompatActivity() {
