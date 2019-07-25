@@ -1,4 +1,4 @@
-package com.b1ns.hanseithon.view
+package com.b1ns.hanseithon.view.splash
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
