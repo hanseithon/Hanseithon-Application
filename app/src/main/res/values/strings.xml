@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hanseithon</string>
+    <string name="app_name">공휴</string>
     <string name="title_activity_maps">Map</string>
     <string name="n">휴식이\n필요하신가요?</string>
 </resources>

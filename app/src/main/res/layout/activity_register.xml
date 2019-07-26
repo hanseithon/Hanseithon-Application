@@ -7,13 +7,38 @@
     android:background="@drawable/background"
     tools:context=".view.user.RegisterActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_marginBottom="280dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/registerInput1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sing up!"
+        android:textColor="@android:color/white"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/registerInput1"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/registerInput1"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="20dp"
         android:hint="아이디"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +110,11 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/register"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:text="회원가입"
