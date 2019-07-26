@@ -28,27 +28,27 @@
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="menu"
+        app:layout_constraintStart_toEndOf="@+id/menu"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/randomTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="220dp"
         android:textColor="#ffffff"
         android:textSize="13pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu"
-        tools:text="휴식이\n필요하신가요?" />
+        android:text="@string/n" />
 
     <ScrollView
         android:id="@+id/chip"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/randomTitle">
@@ -93,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:paddingTop="90dp"
                 android:paddingBottom="90dp"
                 android:paddingStart="60dp"
@@ -104,27 +105,33 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/bcak_main">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="@android:color/black"
                 android:gravity="center"
                 android:paddingTop="90dp"
                 android:paddingBottom="90dp"
                 android:paddingEnd="60dp"
                 android:paddingStart="60dp"
                 android:text="실시간 공휴" />
+
         </LinearLayout>
 
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:backgroundTint="@android:color/white"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/icon"
+        android:background="@drawable/icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

@@ -3,11 +3,14 @@ package com.b1ns.hanseithon.view.main
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.b1ns.hanseithon.R
+import com.b1ns.hanseithon.SnsActivity
 import com.b1ns.hanseithon.data.Board
 import com.b1ns.hanseithon.data.ResultBoard
 import com.b1ns.hanseithon.data.ResultLogin
 import com.b1ns.hanseithon.utils.Utils
 import com.b1ns.hanseithon.view.user.LoginActivity
+import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.startActivity
 import retrofit2.Call
 import javax.security.auth.callback.Callback
 
@@ -22,5 +25,9 @@ class MainActivity : AppCompatActivity() {
         //var boardData = Board()
 
         //val board : Call<ResultBoard> = Utils.service.board(boardData)
+
+        fab.setOnClickListener {
+            startActivity<SnsActivity>()
+        }
     }
 }

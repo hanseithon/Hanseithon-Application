@@ -6,7 +6,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:overScrollMode="always">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,59 +17,61 @@
                 android:id="@+id/chip1"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:gravity="center"
                 android:layout_marginStart="12dp"
-                android:textColor="@android:color/black"
                 android:background="@drawable/btn"
-                android:text="대학로"/>
+                android:gravity="center"
+                android:text="대학로"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/chip2"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:gravity="center"
-                android:layout_marginStart="30dp"
-                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/btn"
-                android:text="음식"/>
+                android:gravity="center"
+                android:text="음식"
+                android:textColor="@android:color/black" />
+
             <TextView
                 android:id="@+id/chip3"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:gravity="center"
-                android:layout_marginStart="30dp"
-                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/btn"
-                android:text="산책"/>
+                android:gravity="center"
+                android:text="산책"
+                android:textColor="@android:color/black" />
+
             <TextView
                 android:id="@+id/chip4"
                 android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
+                android:layout_height="20dp"
                 android:layout_marginStart="30dp"
-                android:textColor="@android:color/black"
                 android:background="@drawable/btn"
-                android:text="오락"/>
+                android:gravity="center"
+                android:text="오락"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/chip5"
                 android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
+                android:layout_height="20dp"
                 android:layout_marginStart="30dp"
-                android:textColor="@android:color/black"
                 android:background="@drawable/btn"
-                android:text="카페"/>
+                android:gravity="center"
+                android:text="카페"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/chip6"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:gravity="center"
                 android:layout_marginStart="30dp"
-                android:textColor="@android:color/black"
                 android:background="@drawable/btn"
-                android:text="잠"/>
+                android:gravity="center"
+                android:text="잠"
+                android:textColor="@android:color/black" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
