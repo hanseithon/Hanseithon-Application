@@ -14,7 +14,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class LoginActivity : AppCompatActivity() {
+open class LoginActivity : AppCompatActivity() {
+
+    var data: String? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,8 +43,10 @@ class LoginActivity : AppCompatActivity() {
             override fun onResponse(call: Call<ResultLogin>, response: Response<ResultLogin>) {
                 when (response.code()) {
                     200 -> {
+                        data = response.message()
                         finish()
                         startActivity<MainActivity>()
+
                     }
                     404 -> Toast.makeText(applicationContext, "아이디 혹은 비밀번호가 틀렸습니다.", Toast.LENGTH_LONG).show()
                     500 -> Toast.makeText(applicationContext, "서버 오류 ~!", Toast.LENGTH_LONG).show()
@@ -56,4 +60,5 @@ class LoginActivity : AppCompatActivity() {
         })
 
     }
+
 }

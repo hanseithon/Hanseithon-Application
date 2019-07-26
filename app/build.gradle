@@ -20,6 +20,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -45,8 +49,9 @@ dependencies {
     // CardView
     implementation 'androidx.cardview:cardview:1.0.0'
 
+
     // design
-    implementation 'com.google.android.material:material:1.1.0-alpha08'
+    implementation 'com.google.android.material:material:1.0.0'
 
     // CircleImageView
     implementation 'de.hdodenhof:circleimageview:3.0.0'

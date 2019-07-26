@@ -1,13 +1,11 @@
 package com.b1ns.hanseithon.utils
 
 
-import com.b1ns.hanseithon.data.Login
-import com.b1ns.hanseithon.data.Register
-import com.b1ns.hanseithon.data.ResultLogin
-import com.b1ns.hanseithon.data.ResultRegister
+import com.b1ns.hanseithon.data.*
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface Services {
 
@@ -20,5 +18,8 @@ interface Services {
     fun register(
         @Body register: Register
     ): Call<ResultRegister>
-
+    @POST("/board")
+    fun board(
+        @Body board: Board
+    ): Call<ResultBoard>
 }
